@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  java:
+    image: hello:1.0 
+    container_name: my-spring-app
+    ports:
+    - '80:8080'
+    #volumes:
+    #- ./jar:/root/
+    command:
+      ["java", "-jar", "/root/interview.jar"]
+      
